@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+
+<button class="btn btn-secondary"><%= link_to "Edit article", edit_article_path %></button>
+<div class="alert alert-secondary">
+  <%= @article.content %>
+</div>
+
+<%= link_to "Back to list", articles_path %>
